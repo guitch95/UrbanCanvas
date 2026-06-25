@@ -12,7 +12,7 @@ struct ArtistView: View {
         GridItem(.flexible(), spacing: 20),
         GridItem(.flexible(), spacing: 20)
     ]
-    let artist = MockData().arrOfArtist
+    let artist = MockData.arrOfArtist
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
