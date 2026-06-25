@@ -31,7 +31,7 @@ struct ListItem: View {
 }
 
 #Preview {
-    ListItem(oeuvre: ViewModel.mockData)
+    ListItem(oeuvre: MockData.mockData)
 }
 
 
