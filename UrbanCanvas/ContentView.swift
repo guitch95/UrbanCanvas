@@ -25,7 +25,7 @@ struct ContentView: View {
             }
             
             Tab {
-            } label: {
+             } label: {
                 Image(systemName: "gamecontroller.fill")
                     .environment(\.symbolVariants, .none)
                 Text("Missions")

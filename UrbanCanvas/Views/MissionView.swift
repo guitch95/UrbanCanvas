@@ -11,7 +11,7 @@ import SwiftUI
 struct MissionView: View {
     @State var discovery = [Oeuvre]()
     @State var missionTotal = 0
-    @State var oeuvres = ViewModel.arrOfOeuvres
+    @State var oeuvres = MockData.arrOfOeuvres
     @State private var selectedOeuvre: Oeuvre?
     var dispo : [Oeuvre] {
         oeuvres.filter{!$0.isDiscovered }
@@ -82,17 +82,6 @@ struct MissionView: View {
         missionTotal = discovery.count
         
     }
-    
-//    func generateRandomElement() {
-//        var result = [Oeuvre]()
-//        for oeuvre in available.shuffled() {
-//            if result.count == 3 { break }
-//            if result.contains(where: { $0.author == oeuvre.author }) { continue }
-//            if result.filter({ $0.type == oeuvre.type }).count >= 2 { continue }
-//            result.append(oeuvre)
-//        }
-//        discovery = result
-//    }
     
     func delete(for id: UUID) {
         if let index = oeuvres.firstIndex(where: {$0.id == id}) {
