@@ -9,7 +9,7 @@ import MapKit
 import SwiftUI
 
 struct HomeView: View {
-    let oeuvre = ViewModel.mockData
+    let oeuvre = MockData.mockData
     @State private var selectedTheme = selection.list
     @State private var showAction = false
     private enum selection: String, CaseIterable {

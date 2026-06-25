@@ -56,6 +56,6 @@ struct InfoSheet: View {
 }
 
 #Preview {
-    let oeuvre = ViewModel.mockData
+    let oeuvre = MockData.mockData
     InfoSheet(oeuvre: oeuvre) { _ in }
 }
